@@ -1,0 +1,5 @@
+#!/bin/bash
+
+main=${1:-src/main.js}
+
+node_modules/.bin/jspm bundle-sfx ${main} build/main.js --minify

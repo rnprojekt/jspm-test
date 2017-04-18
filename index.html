@@ -1,0 +1,30 @@
+  <!doctype html>
+  <!-- TODO: add by js -->
+  <!-- <div id="mocha"></div> -->
+  <!-- <div id="root"></div> -->
+
+  <div id="main"></div>
+
+  <!-- build:env -->
+  <script>
+    const reactor2 = {
+      api: "https://__API__",
+      app: "https://__APP__",
+      env: 'development',
+      ver: 0
+    };
+  </script>
+  <!-- endbuild -->
+
+  <!-- build:js -->
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+
+  <script>
+    let main = 'src/main.js';
+    // let main = 'src/main.jsx!';
+    System.import(main).then(function (m) {
+      console.debug('System loaded...');
+    });
+  </script>
+  <!-- endbuild -->

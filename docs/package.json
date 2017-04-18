@@ -1,0 +1,19 @@
+{
+  "name": "jspm-test",
+  "version": "1.0.0",
+  "description": "JSPM Test Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docpress"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "docpress": "^0.7.1"
+  },
+  "devDependencies": {}
+}
